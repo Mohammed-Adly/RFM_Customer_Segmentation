@@ -12,7 +12,7 @@ This project analyzes customer transaction data to segment customers into distin
 
 To ensure data quality, the following preprocessing steps were performed:
 
--  **Handling Missing Values**: Rows with missing `CustomerID` values were removed[cite: 88], as they are essential for this analysis.  A total of 3,724 rows with null CustomerIDs were identified[cite: 70].
+-  **Handling Missing Values**: Rows with missing `CustomerID` values were removed, as they are essential for this analysis.  A total of 3,724 rows with null CustomerIDs were identified[cite: 70].
 -  **Removing Duplicates**: Any duplicate rows in the dataset were dropped to avoid data redundancy[cite: 85].
 - **Correcting Data Types**: Column data types were adjusted for accurate analysis:
   -  `Amount` was converted from object to float[cite: 91].
@@ -62,3 +62,4 @@ To achieve a more nuanced segmentation, the RFM model was applied:
 -  **Pandas**: For data manipulation and analysis[cite: 4].
 -  **SQLAlchemy**: For database connection[cite: 5].
 -  **Matplotlib & Seaborn**: For data visualization[cite: 100, 99].
+
