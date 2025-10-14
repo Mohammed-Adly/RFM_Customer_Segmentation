@@ -22,7 +22,7 @@ To ensure data quality, the following preprocessing steps were performed:
 
 ### 3. Exploratory Data Analysis (EDA) & Outlier Detection
 
--  Box plots were generated for the `Quantity` and `Amount` columns to visually identify outliers in the data[cite: 103, 109]. These plots helped in understanding the distribution of transaction values and quantities.
+-  Box plots were generated for the `Quantity` and `Amount` columns to visually identify outliers in the data. These plots helped in understanding the distribution of transaction values and quantities.
 
 ![Box Plot for Quantity](./Images/boxplot_quantity.png)
 ![Box Plot for Amount](./Images/boxplot_amount.png)
@@ -32,7 +32,7 @@ To ensure data quality, the following preprocessing steps were performed:
 An initial, simple segmentation was performed to distinguish between high-value and standard transactions.
 
 -  **IQR Method**: The Interquartile Range (IQR) was calculated for the `Amount` column.
--  **VIP vs. Normal Customers**: An upper bound was defined as $Q3 + 1.5 * IQR$[cite: 141].  Transactions with an `Amount` exceeding this threshold (`941.38`) were classified as 'VIP' [cite: 143, 162] , while the rest were 'Normal'.
+-  **VIP vs. Normal Customers**: An upper bound was defined as $Q3 + 1.5 * IQR.  Transactions with an `Amount` exceeding this threshold (`941.38`) were classified as 'VIP', while the rest were 'Normal'.
 -  **Visualization**: A pie chart was created to show the proportion of VIP (7.9%) versus Normal (92.1%) invoices.
 
 
@@ -47,12 +47,12 @@ To achieve a more nuanced segmentation, the RFM model was applied:
   -  **Recency**: Days since the customer's last purchase.
   -  **Frequency**: Total number of unique invoices.
   -  **Monetary**: Total amount spent.
--  **Assign RFM Scores**: Customers were scored from 1 to 4 for each RFM metric based on quartiles[cite: 203, 205].  A combined `RFM_Score` was created by concatenating these scores.
+-  **Assign RFM Scores**: Customers were scored from 1 to 4 for each RFM metric based on quartiles.  A combined `RFM_Score` was created by concatenating these scores.
 
 ### 6. Customer Segmentation & Visualization
 
 -  **Segment Definition**: Customers were categorized into actionable segments like 'Champions', 'At-Risk Customers', 'Potential Loyalists', and 'Hibernating Customers' using a predefined mapping based on their RFM scores.
--  **Final Visualization**: A horizontal bar chart was generated to display the total number of customers within each defined segment[cite: 228], providing a clear view of the customer base distribution.
+-  **Final Visualization**: A horizontal bar chart was generated to display the total number of customers within each defined segment, providing a clear view of the customer base distribution.
 
 ![Number of Customers in Each Segment](./Images/bar_chart_segments.png)
 
@@ -62,6 +62,7 @@ To achieve a more nuanced segmentation, the RFM model was applied:
 -  **Pandas**: For data manipulation and analysis.
 -  **SQLAlchemy**: For database connection.
 -  **Matplotlib & Seaborn**: For data visualization.
+
 
 
 
