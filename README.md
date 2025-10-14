@@ -36,7 +36,7 @@ An initial, simple segmentation was performed to distinguish between high-value 
 -  **Visualization**: A pie chart was created to show the proportion of VIP (7.9%) versus Normal (92.1%) invoices.
 
 
-![Proportion of Normal vs. VIP Invoices](./images/pie_chart_vip.png)
+![Proportion of Normal vs. VIP Invoices](./Images/pie_chart_vip.png)
 
 
 ### 5. RFM (Recency, Frequency, Monetary) Analysis
@@ -62,5 +62,6 @@ To achieve a more nuanced segmentation, the RFM model was applied:
 -  **Pandas**: For data manipulation and analysis.
 -  **SQLAlchemy**: For database connection.
 -  **Matplotlib & Seaborn**: For data visualization.
+
 
 
